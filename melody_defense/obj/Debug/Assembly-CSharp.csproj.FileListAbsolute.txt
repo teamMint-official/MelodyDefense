@@ -1,0 +1,2 @@
+C:\Users\ckc20\OneDrive\Desktop\melody_defense\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\ckc20\OneDrive\Desktop\melody_defense\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

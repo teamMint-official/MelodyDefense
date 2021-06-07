@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class musicList : MonoBehaviour
 {
-    public AudioClip[] _clips;
+    [SerializeField] AudioClip[] _clips;
     AudioSource _audio;
     DataController mgr;
-    public Text title;
+    [SerializeField] Text title;
+    [SerializeField] Image bgImg;
+    [SerializeField] Sprite[] imgList;
     string[] gameList = { "song0","song1"};
 
     short cur_music=0;
@@ -31,6 +33,7 @@ public class musicList : MonoBehaviour
 
         _audio.clip = _clips[cur_music];
         title.GetComponent<Text>().text = _clips[cur_music].name;
+        bgImg.sprite = imgList[cur_music];
     }
 
     void Start()
@@ -46,6 +49,7 @@ public class musicList : MonoBehaviour
         else if (cur_music < min) cur_music = max;
 
         title.GetComponent<Text>().text = _clips[cur_music].name;
+        bgImg.sprite = imgList[cur_music];
 
         if (!_audio.isPlaying) {
             _audio.clip = _clips[cur_music];

@@ -53,35 +53,35 @@
     <UnityVersion>2020.3.2f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\F_Setting\sc_setting.cs" />
-    <Compile Include="Assets\Script\F_Game\ObjectPool.cs" />
     <Compile Include="Assets\Script\F_exit\btn_exit.cs" />
-    <Compile Include="Assets\Script\F_start\DataController.cs" />
-    <Compile Include="Assets\Script\F_Dictionary\btn_dict.cs" />
     <Compile Include="Assets\Script\F_Game\timingMgr.cs" />
     <Compile Include="Assets\Script\F_StageSelect\musicList.cs" />
+    <Compile Include="Assets\Script\F_Game\posMgr\checkPos.cs" />
+    <Compile Include="Assets\Script\F_Lobby\back_lobby.cs" />
+    <Compile Include="Assets\Script\F_Game\touch_game.cs" />
+    <Compile Include="Assets\Script\F_Game\sc_playerCtl.cs" />
+    <Compile Include="Assets\Script\F_start\goLobby.cs" />
+    <Compile Include="Assets\Script\F_Dictionary\touch_char.cs" />
+    <Compile Include="Assets\Script\F_Setting\sc_setting.cs" />
+    <Compile Include="Assets\Script\F_Game\ObjectPool.cs" />
+    <Compile Include="Assets\Script\F_start\DataController.cs" />
+    <Compile Include="Assets\Script\F_Dictionary\btn_dict.cs" />
     <Compile Include="Assets\Script\F_start\FadeText.cs" />
     <Compile Include="Assets\Script\F_Lobby\Btn_lobby.cs" />
-    <Compile Include="Assets\Script\F_Game\posMgr\checkPos.cs" />
     <Compile Include="Assets\Script\F_pause\btn_pause.cs" />
     <Compile Include="Assets\Script\F_Dictionary\sc_dictionary.cs" />
     <Compile Include="Assets\Script\F_Game\noteMgr.cs" />
     <Compile Include="Assets\Script\F_StageSelect\Btn_stage.cs" />
     <Compile Include="Assets\Script\F_Lobby\sc_lobby.cs" />
-    <Compile Include="Assets\Script\F_Lobby\back_lobby.cs" />
-    <Compile Include="Assets\Script\F_Game\touch_game.cs" />
-    <Compile Include="Assets\Script\F_Game\sc_playerCtl.cs" />
     <Compile Include="Assets\Script\F_Game\_note.cs" />
-    <Compile Include="Assets\Script\F_start\goLobby.cs" />
-    <Compile Include="Assets\Script\F_Dictionary\touch_char.cs" />
     <Compile Include="Assets\Script\F_History\sc_history.cs" />
     <Compile Include="Assets\Script\F_Game\posMgr\noteAppearPos.cs" />
     <Compile Include="Assets\Script\F_start\_escape.cs" />
     <Compile Include="Assets\Script\F_pause\sc_pause.cs" />
+    <Compile Include="Assets\gradient_test.cs" />
     <Compile Include="Assets\Script\F_Game\btn_game.cs" />
     <Compile Include="Assets\Script\F_Result\get_result.cs" />
     <Compile Include="Assets\Script\ui_position.cs" />
-    <Compile Include="Assets\gradient_test.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -654,11 +654,11 @@
     <Reference Include="Unity.2D.PixelPerfect">
       <HintPath>Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="PsdPlugin">
       <HintPath>Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
@@ -684,9 +684,6 @@
     <Reference Include="Unity.2D.Path.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -695,6 +692,9 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
